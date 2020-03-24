@@ -414,6 +414,7 @@ h3{
     left: 50%;
     transform: translateX(-50%);
     font-weight:normal;
+    text-align: center;
 }
 
 h3::before,h3::after{
