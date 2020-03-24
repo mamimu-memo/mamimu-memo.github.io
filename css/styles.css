@@ -222,8 +222,6 @@ header{
 
 main {
   position: relative;
-    width: 100%;
-    max-width: 1200px;
 }
 
 main p{
@@ -330,7 +328,6 @@ grid-template-rows: repeat(2, auto);
   grid-column-gap: .5%;
   padding: 2em 0;
   width: 90%;
-    max-width: 1000px;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
