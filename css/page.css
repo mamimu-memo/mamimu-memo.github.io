@@ -8,7 +8,8 @@
 }
 
 .work-list ul li{
-    width: 45%;
+    width: auto;
+    max-width: 45%;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -17,4 +18,9 @@
     width: auto;
     max-width: 100%;
     height: auto;
+    transition: .5s ease-in all;        
+}
+
+.work-list ul li img:hover{
+    opacity: .5;
 }

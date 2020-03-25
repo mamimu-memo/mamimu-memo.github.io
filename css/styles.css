@@ -386,12 +386,10 @@ grid-template-rows: repeat(2, auto);
 
 #menu2 ul li img{
   width: 300px;
-    height: auto;
-    max-height: 500px;
-  object-fit: contain;
+    height: 300px;
+  object-fit: cover;
   object-position: center;
-    font-family: " object-fit: contain;";
-    transition: .5s ease-in all;
+    font-family: " object-fit: cover;";
 }
 
 #menu2 ul li a{
@@ -400,18 +398,29 @@ grid-template-rows: repeat(2, auto);
     overflow: hidden;
 }
 
-
-#menu2 ul.cat1 li a:hover img{
-    transform: rotateY(360deg);
-    background: rgba(10,10,10,0);    
+#menu2 ul li a::before{
+    content: "MORE→";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    width: 200px;
+    height: 32px;
+    margin: auto;
+    padding: 84px 0;
+    color: #fff;
+    font-family: 'Pompiere', cursive;    
+    text-align: center;
+    font-size: 32px;
+    transition: .5s ease-in all;    
+    transform: scale(0);
 }
 
-#menu2 ul.cat2 li a:hover img{
-    opacity: .5;
-}
-
-#menu2 ul.cat3 li a:hover img{
-    border-radius: 200px;
+#menu2 ul li a:hover::before{
+    transform: scale(1);
 }
 
 h3{
