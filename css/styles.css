@@ -28,8 +28,17 @@ height: 100%;
 /*header*/
 
 header{
-    scroll-snap-align: center;            
   height: 100vh;
+}
+
+header.page{
+    position: relative;
+    height: 200px;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #333;
 }
 
 /*header::before{
@@ -211,11 +220,10 @@ header{
   margin:0 1em;
 }
 
-.main_menu ul li a{
+.main_menu a{
   color: #666;
   text-decoration: none;
 }
-
 
 /*main*/
 
@@ -321,7 +329,7 @@ ul.skill li.wp::after{
 display: -ms-grid;
 display: grid;
 -ms-grid-columns: auto .5% auto .5% auto .5% auto .5% auto;
-grid-template-columns: repeat(5, auto);
+grid-template-columns: repeat(3, auto);
 -ms-grid-rows: (auto)[2];
 grid-template-rows: repeat(2, auto);
   grid-column-gap: .5%;
@@ -377,11 +385,12 @@ grid-template-rows: repeat(2, auto);
 }
 
 #menu2 ul li img{
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 300px;
+    height: auto;
+    max-height: 500px;
+  object-fit: contain;
   object-position: center;
-    font-family: "  object-fit: cover;";
+    font-family: " object-fit: contain;";
     transition: .5s ease-in all;
 }
 
