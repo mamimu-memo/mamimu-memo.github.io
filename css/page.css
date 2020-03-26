@@ -1,26 +1,2 @@
 /* CSS Document */
 
-.work-list ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.work-list ul li{
-    width: auto;
-    max-width: 45%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.work-list ul li img{
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    transition: .5s ease-in all;        
-}
-
-.work-list ul li img:hover{
-    opacity: .5;
-}
