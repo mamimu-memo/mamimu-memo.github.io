@@ -517,6 +517,10 @@ footer a{
     margin-top: 40px;
 }
 
+.work-list ul li:only-of-type{
+    margin: auto;
+}
+
 .work-list ul li{
     width: auto;
     max-width: 45%;
