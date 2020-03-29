@@ -265,6 +265,26 @@ main h2{
     text-align: center;
 }
 
+#menu1 a{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    background: #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px auto 0;
+    transition: .3s all ease;
+}
+
+#menu1 a:hover{
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+
 ul.skill{
     display: flex;
     flex-wrap: wrap;
