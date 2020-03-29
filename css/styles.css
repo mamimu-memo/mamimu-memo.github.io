@@ -329,12 +329,11 @@ ul.skill li.wp::after{
 display: -ms-grid;
 display: grid;
 -ms-grid-columns: auto .5% auto .5% auto .5% auto .5% auto;
-grid-template-columns: repeat(3, auto);
+grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 -ms-grid-rows: (auto)[2];
 grid-template-rows: repeat(2, auto);
   grid-column-gap: .5%;
   padding: 2em 0;
-  width: 90%;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -397,6 +396,7 @@ grid-template-rows: repeat(2, auto);
     display: block;
     position: relative;
     overflow: hidden;
+    text-align: center;    
 }
 
 #menu2 ul li a::before{
@@ -500,6 +500,7 @@ footer{
   height: 60px;
   text-align: center;
   background: rgba(0,0,0,.5);
+    transition: .3s all ease;
 }
 
 footer a{
@@ -508,6 +509,11 @@ footer a{
   line-height: 60px;
   text-decoration: none;
 }
+
+footer:hover{
+    opacity: .8;
+}
+
 
 /*work*/
 .work-list ul{
@@ -528,6 +534,10 @@ footer a{
     text-align: center;
 }
 
+.work-list ul li a{
+    text-align: center;
+}
+
 .work-list ul li img{
     width: auto;
     max-width: 100%;
@@ -538,6 +548,13 @@ footer a{
 .work-list ul li img:hover{
     opacity: .5;
 }
+
+footer.page{
+    max-width: 200px;
+    border-radius: 60px;
+    margin:0 auto 20px;
+}
+
 
 @media only screen and (max-width: 640px) {
     body{
@@ -555,6 +572,7 @@ footer a{
     
     .work-list ul li{
     max-width: 90%;
+        margin: auto;
     }
 
 }
