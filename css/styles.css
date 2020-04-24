@@ -575,10 +575,13 @@ footer.page{
 }
 
 @media screen and (max-width: 1024px){
-    #menu2 ul{
-        
-    }
+    header {
+        height: 70vh;
+    }    
     
+    .main_menu{
+        bottom: auto;
+    }
 }
 
 
