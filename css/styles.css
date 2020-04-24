@@ -351,7 +351,6 @@ display: grid;
 -ms-grid-columns: auto .5% auto .5% auto .5% auto .5% auto;
 grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 -ms-grid-rows: (auto)[2];
-grid-template-rows: repeat(2, auto);
   grid-column-gap: .5%;
   grid-row-gap: 5%;
   padding: 2em 0;
@@ -574,6 +573,13 @@ footer.page{
     max-width: 200px;
     border-radius: 60px;
     margin:0 auto 20px;
+}
+
+@media screen and (max-width: 1024px){
+    #menu2 ul{
+        
+    }
+    
 }
 
 
