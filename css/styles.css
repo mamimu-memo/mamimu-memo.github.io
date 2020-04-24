@@ -590,6 +590,10 @@ footer.page{
         overflow-x: hidden;
     }
     
+    header {
+    height: 100vh;
+    }
+    
     #menu2 ul{
         grid-template-columns:auto;
         grid-row-gap: .5%;
