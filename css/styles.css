@@ -591,7 +591,11 @@ footer.page{
     }
     
     header {
-    height: 100vh;
+        height: 100vh;
+    }
+    
+    .main_menu{
+        bottom: 0;
     }
     
     #menu2 ul{
