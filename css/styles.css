@@ -353,6 +353,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 -ms-grid-rows: (auto)[2];
 grid-template-rows: repeat(2, auto);
   grid-column-gap: .5%;
+  grid-row-gap: 5%;
   padding: 2em 0;
   margin: auto;
   -webkit-box-pack: center;
