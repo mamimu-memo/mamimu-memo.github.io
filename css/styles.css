@@ -266,22 +266,40 @@ main h2{
 }
 
 #menu1 a{
-    display: block;
+    position: relative;
+display: block;
     width: 100%;
     max-width: 500px;
     text-align: center;
     color: #333;
     text-decoration: none;
     background: #ccc;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     margin: 20px auto 0;
     transition: .3s all ease;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+border: 1px solid #ccc;    
+}
+
+#menu1 a::after{
+    content: ">";
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    top: 14px;
+    margin: auto;    
 }
 
 #menu1 a:hover{
     border: 1px solid #ccc;
     background: #fff;
+}
+
+#menu1 a:hover::after{
+    right: 20px;
 }
 
 
