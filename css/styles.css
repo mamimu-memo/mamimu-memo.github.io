@@ -288,7 +288,8 @@ border: 1px solid #ccc;
     right: 30px;
     font-size: 24px;
     top: 14px;
-    margin: auto;    
+    margin: auto;  
+    transition: .3s all ease;
 }
 
 #menu1 a:hover{
