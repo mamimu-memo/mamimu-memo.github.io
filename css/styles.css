@@ -267,19 +267,20 @@ main h2{
 
 #menu1 a{
     position: relative;
-display: block;
+    display: block;
     width: 100%;
     max-width: 500px;
     text-align: center;
-    color: #333;
+    color: #fff;
     text-decoration: none;
-    background: #ccc;
+    background: #ffb4b4;
     padding: 20px;
     border-radius: 20px;
     margin: 20px auto 0;
     transition: .3s all ease;
-    font-size: 18px;
-border: 1px solid #ccc;    
+    font-size: 24px;
+    border: 1px solid #ccc;
+    font-weight: bold;
 }
 
 #menu1 a::after{
