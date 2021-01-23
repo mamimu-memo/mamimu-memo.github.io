@@ -294,8 +294,9 @@ main h2{
 }
 
 #menu1 a:hover{
-    border: 1px solid #ccc;
+    border: 1px solid #ffb4b4;
     background: #fff;
+    color: #ffb4b4;
 }
 
 #menu1 a:hover::after{
