@@ -9,7 +9,8 @@ li{
 }
 
 html{
-  scroll-behavior: smooth;    
+  scroll-behavior: smooth;
+font-family: 'Noto Serif JP', serif;
 }
 
 body{
@@ -23,17 +24,37 @@ height: 100%;
 }
 
 .wf-tit { 
-  font-family: 'Pompiere', cursive;
+font-family: 'Roboto', sans-serif;
+  /*font-family: 'Pompiere', cursive;*/
 }
 /*header*/
 
 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   height: 100vh;
+  background-image: linear-gradient(45deg, rgba(243, 170, 196, 1), rgba(246, 190, 232, 1) 33%, rgba(255, 247, 216, 1) 76%, rgba(183, 187, 255, 1));
 }
 
 header.page{
     position: relative;
     height: 200px;
+}
+
+h1{
+    font-size: 2vw;
+    text-align: center;
+    line-height: 1.8;
+    color: rgba(243, 170, 196, 1);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 82% 50% 100% 90%;
 }
 
 h1 a{
@@ -273,22 +294,28 @@ main h2{
     text-align: center;
     color: #fff;
     text-decoration: none;
-    background: #ffb4b4;
-    padding: 20px;
-    border-radius: 20px;
+    background-image: linear-gradient(45deg, rgba(243, 170, 196, 1),  rgba(183, 187, 255, 1));
+    padding: 10px;
+    border-radius: 5px;
     margin: 20px auto 0;
     transition: .3s all ease;
-    font-size: 24px;
+    font-size: 18px;
     border: 1px solid #ccc;
-    font-weight: bold;
 }
 
 #menu1 a::after{
-    content: ">";
+    content: "";
     position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
     right: 30px;
     font-size: 24px;
-    top: 14px;
+    top: 0;
+    bottom: 0;
     margin: auto;  
     transition: .3s all ease;
 }
@@ -301,6 +328,7 @@ main h2{
 
 #menu1 a:hover::after{
     right: 20px;
+    border-color: rgba(243, 170, 196, 1);
 }
 
 
